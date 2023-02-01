@@ -16,7 +16,7 @@ function validated(){
 		username.focus();
 		return false;
 	}
-	if(password.value.length < 6){
+	if(password.value.length < 9){
 		password.style.border = "1px solid red";
 		pass_error.style.display = "block";
 		password.focus();
@@ -24,14 +24,14 @@ function validated(){
 	}
 }
 function username_Verify(){
-	if(username.value.length>=8){
+	if(username.value.length>8){
 		username.style.border = "1px solid silver";
 		username_error.style.display = "none";
 		return true;
 	}
 }
 function pass_Verify(){
-	if(password.value.length>=8){
+	if(password.value.length>8){
 		
 		password.style.border = "1px solid silver";
 		pass_error.style.display = "none";
