@@ -1,42 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Contact Form  To Email Using JavaScript</title>
-	<link rel="stylesheet" href="new.css">
-	</head>
-	<body>
-	<a href="home.html">Home</a>
-		<div class="container">
-		<form onsubmit="sendEmail(); reset(); return false;">
-		<h3>GET IN TOUCH</h3>
-		<input type="text" id="name" placeholder="Your Name" required>
-		<input type="email" id="email" placeholder="Email id" required>
-		<input type="text" id="phone" placeholder="Phone no" required>
-		<textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
-		<button type="submit">Send </button>
-		</form>
-		</div>
-		<script src=" https://smtpjs.com/v3/smtp.js"></script>
-		<script>
-			function sendEmail(){
-				Email.send({
-	SecureToken :"e09f556d-2f67-4eb4-a1ec-bd1a31617271 ",
-    
-
-    
-    To : 'deshmukhtanuja3@gmail.com',
-    From :"deshmukhrutuja54@gmail.com",
-    Subject : "New Contact Form Enquiry",
-    Body : "Name:" +document.getElementById("name").value
-	+ "<br> Email:"+document.getElementById("email").value
-	+"<br> Phone no:"+document.getElementById("phone").value
-	+"<br> Message:"+document.getElementById("message").value
-}).then(
-  message => alert("message")
-);
-
-			}
-			</script>
-	</body>
-	</html>
+     <head>
+	     <title>Home Page</title>
+	 </head>
+	 <body bgcolor="#7FB3D5">
+	 <a href="about.html" target="_blank">About Us</a>
+	 <a href="index 1.html" target="_blank">Contact Us</a>
+	 <a href="login.html" target="_blank">Login</a>
+	 <h1> This is a Home Page</h1>
+	 <p align="center">
+	 <img src="assets/images/resume.jpg">
+	 </p>
+	 <h2 align="center">Building your resume with an online resume builder saves your time,effort and money.</h2>
+	 <h2 align="center">The job seeker gets a clean professional looking format with up-to-date design.</h2>
+	 </body>
+</html>
